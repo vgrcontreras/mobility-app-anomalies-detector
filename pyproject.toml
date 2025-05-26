@@ -7,9 +7,10 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
 faker = "^37.3.0"
 pydantic = "^2.11.4"
+apache-airflow = "^3.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
