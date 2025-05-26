@@ -2,7 +2,7 @@ from datetime import date
 
 from pydantic import BaseModel
 
-from models.item import ItemModel
+from include.models.item import ItemModel
 
 
 class VendaModel(BaseModel):

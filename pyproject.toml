@@ -21,6 +21,7 @@ ruff = "^0.11.11"
 
 [tool.ruff]
 line-length = 79
+extend-exclude = ['.astro']
 
 [tool.ruff.lint]
 preview = true

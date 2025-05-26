@@ -4,18 +4,10 @@ from random import choice, randint, uniform
 
 from faker import Faker
 
-from models.item import ItemModel
-from models.sales import VendaModel
+from include.models.item import ItemModel
+from include.models.sales import VendaModel
 
 fake = Faker(locale='pt_BR')
-
-# Definindo diretório de saída dos arquivos JSON
-output_dir = 'data'
-os.makedirs(output_dir, exist_ok=True)
-
-# Definir data atual para utilizar no nome do arquivo
-today = datetime.today().strftime('%Y-%m-%d')
-output_file = f'{output_dir}/vendas_{today}.jsonl'
 
 
 def gerar_item() -> ItemModel:
@@ -40,7 +32,12 @@ def gerar_venda(pedido_id: int) -> VendaModel:
     )
 
 
-def gerar_jsonl(qtd: int = 100_000):
+def gerar_jsonl(output_dir: str = 'data', qtd: int = 100_000):
+    os.makedirs(output_dir, exist_ok=True)
+
+    today = datetime.today().strftime('%Y-%m-%d_%H-%M-%S')
+    output_file = f"{output_dir}/vendas_{today}.jsonl"
+
     with open(output_file, 'w', encoding='utf-8') as file:
         for i in range(1, qtd + 1):
             try:
