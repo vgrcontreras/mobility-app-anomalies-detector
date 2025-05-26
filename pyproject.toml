@@ -40,7 +40,7 @@ lint = 'ruff check'
 pre_format = 'ruff check --fix'
 format = 'ruff format'
 pre_test = 'task lint'
-test = 'pytest -s -x --cov=scripts -vv'
+test = 'pytest -s -x --cov=include/scripts -vv'
 post_test = 'coverage html'
 
 [build-system]
