@@ -1,6 +1,6 @@
 from datetime import date
 
-from scripts.gerar_vendas import gerar_item, gerar_venda
+from include.scripts.gerar_vendas import gerar_item, gerar_venda
 
 
 def test_gerar_venda():
