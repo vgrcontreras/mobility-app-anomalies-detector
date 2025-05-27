@@ -11,6 +11,9 @@ python = ">=3.12,<3.13"
 faker = "^37.3.0"
 pydantic = "^2.11.4"
 apache-airflow = "^3.0.1"
+boto3 = "^1.38.23"
+pydantic-settings = "^2.9.1"
+loguru = "^0.7.3"
 
 
 [tool.poetry.group.dev.dependencies]
