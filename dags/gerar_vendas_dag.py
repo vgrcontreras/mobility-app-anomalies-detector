@@ -3,8 +3,7 @@ from datetime import datetime
 from airflow.decorators import dag, task
 
 from include.scripts.gerar_vendas import gerar_jsonl
-
-OUTPUT_DIR = "/usr/local/airflow/include/data"
+from include.settings import settings
 
 
 @dag(
@@ -19,7 +18,7 @@ def main():
     def task_gerar_jsonl(output_dir):
         return gerar_jsonl(output_dir)
 
-    task_gerar_jsonl(OUTPUT_DIR)
+    task_gerar_jsonl(settings.OUTPUT_DIR)
 
 
 main()
