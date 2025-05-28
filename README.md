@@ -4,7 +4,7 @@
 
 ## Versão em Português
 
-**mobility-app-anomalies-detector** é um projeto de engenharia de dados em desenvolvimento que tem como objetivo identificar comportamentos anômalos ou suspeitos em plataformas de mobilidade urbana, como Uber ou 99. O sistema simula dados realistas de corridas por aplicativo e constrói pipelines escaláveis para analisar, validar e sinalizar padrões de fraude relacionados a motoristas, passageiros, rotas e preços.
+**mobility-app-anomalies-detector** é um projeto de engenharia de dados em desenvolvimento que tem como objetivo identificar comportamentos anômalos ou suspeitos em plataformas de mobilidade urbana. O sistema simula dados realistas de corridas por aplicativo e constrói pipelines escaláveis para analisar, validar e sinalizar padrões de fraude relacionados a motoristas, passageiros, rotas e preços.
 
 ### Índice
 
@@ -83,7 +83,7 @@ As instruções de instalação e execução serão adicionadas após a finaliza
 
 ## English Version
 
-**mobility-app-anomalies-detector** is a data engineering project currently under development that aims to detect **anomalous or suspicious behavior** in urban mobility platforms, such as Uber or 99. The system simulates realistic ride data and builds scalable pipelines to analyze, validate, and flag potential fraud patterns related to drivers, passengers, routes, and pricing.
+**mobility-app-anomalies-detector** is a data engineering project currently under development that aims to detect **anomalous or suspicious behavior** in urban mobility platforms. The system simulates realistic ride data and builds scalable pipelines to analyze, validate, and flag potential fraud patterns related to drivers, passengers, routes, and pricing.
 
 ### Table of Contents
 
@@ -149,7 +149,7 @@ The main objectives of this project are:
 ---
 
 This project is currently in development.  
-Next steps include:
+
 
 - Finalizing the simulated ride generator
 - Implementing anomaly rules and validations
