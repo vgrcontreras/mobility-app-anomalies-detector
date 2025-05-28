@@ -2,13 +2,13 @@
 
 [🇧🇷 Versão em Português](#versão-em-português) | [🇺🇸 English Version](#english-version)
 
----
-
 ## Versão em Português
 
 **mobility-app-anomalies-detector** é um projeto de engenharia de dados em desenvolvimento que tem como objetivo identificar comportamentos anômalos ou suspeitos em plataformas de mobilidade urbana, como Uber ou 99. O sistema simula dados realistas de corridas por aplicativo e constrói pipelines escaláveis para analisar, validar e sinalizar padrões de fraude relacionados a motoristas, passageiros, rotas e preços.
 
 ### Índice
+
+---
 
 - [Objetivos do projeto](#objetivos-do-projeto)
 - [Exemplos de anomalias detectadas](#exemplos-de-anomalias-detectadas)
@@ -16,7 +16,10 @@
 - [Estrutura prevista do projeto](#estrutura-prevista-do-projeto)
 - [Status](#status)
 
+
 ### Objetivos do projeto
+
+---
 
 Os principais objetivos deste projeto são:
 
@@ -32,6 +35,8 @@ Os principais objetivos deste projeto são:
 
 ### Exemplos de anomalias detectadas
 
+---
+
 - Corridas com distância mínima e valor elevado
 - Motoristas completando número anormal de corridas por hora
 - Passageiros usando cupons repetidamente ou cancelando com frequência
@@ -40,6 +45,8 @@ Os principais objetivos deste projeto são:
 - Corridas em horários ou locais atípicos
 
 ### Tecnologias utilizadas
+
+---
 
 - Python para simulação e processamento dos dados
 - Pydantic para validação rigorosa dos dados gerados
@@ -51,6 +58,8 @@ Os principais objetivos deste projeto são:
 
 ### Estrutura prevista do projeto
 
+---
+
 - `include/scripts/`: geração de dados simulados das corridas
 - `include/models/`: schemas de validação com Pydantic
 - `dags/`: DAGs do Airflow para orquestração
@@ -58,6 +67,8 @@ Os principais objetivos deste projeto são:
 - `tests/`: testes unitários gerados com Pytest
 
 ### Status
+
+---
 
 Este projeto está em desenvolvimento.  
 As próximas etapas incluem:
@@ -69,13 +80,14 @@ As próximas etapas incluem:
 
 As instruções de instalação e execução serão adicionadas após a finalização das etapas principais.
 
----
 
 ## English Version
 
 **mobility-app-anomalies-detector** is a data engineering project currently under development that aims to detect **anomalous or suspicious behavior** in urban mobility platforms, such as Uber or 99. The system simulates realistic ride data and builds scalable pipelines to analyze, validate, and flag potential fraud patterns related to drivers, passengers, routes, and pricing.
 
 ### Table of Contents
+
+---
 
 - [Project Goals](#project-goals)
 - [Examples of Detected Anomalies](#examples-of-detected-anomalies)
@@ -84,6 +96,8 @@ As instruções de instalação e execução serão adicionadas após a finaliza
 - [Status](#status-1)
 
 ### Project Goals
+
+---
 
 The main objectives of this project are:
 
@@ -99,6 +113,8 @@ The main objectives of this project are:
 
 ### Examples of Detected Anomalies
 
+---
+
 - Rides with minimal distance and elevated price
 - Drivers completing an abnormal number of rides per hour
 - Passengers using discount codes repeatedly or canceling too often
@@ -107,6 +123,8 @@ The main objectives of this project are:
 - Rides happening at unusual times or locations
 
 ### Technologies Used
+
+---
 
 - Python for data simulation and processing
 - Pydantic for strict data validation
@@ -118,6 +136,8 @@ The main objectives of this project are:
 
 ### Project Structure
 
+---
+
 - `include/scripts/`: ride data generation scripts
 - `include/models/`: validation schemas using Pydantic
 - `dags/`: Airflow DAGs for orchestration
@@ -125,6 +145,8 @@ The main objectives of this project are:
 - `tests/`: unit tests written with Pytest
 
 ### Status
+
+---
 
 This project is currently in development.  
 Next steps include:
